@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="nav-pag">
       <div className="container">
-        <h1 className="titulo">GameStore</h1>
+        <h1 className="titulo">👾 GameStore</h1>
         <ul className="lista">
           {categorias.map((categoria) => (
             <li key={categoria}>

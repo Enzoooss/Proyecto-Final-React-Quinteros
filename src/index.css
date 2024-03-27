@@ -9,13 +9,15 @@
   height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  background-color: #9755d8;
+  background-color: rgb(110, 47, 161);
 }
 
-.container{
-    display: flex;
-    gap: 5rem;
+.container {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
 }
 
 .carrito {
@@ -26,11 +28,11 @@
 }
 
 .lista {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 span {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 ul {
@@ -45,5 +47,6 @@ a {
 }
 
 .gretting {
-    margin: 20px;
+  margin: 20px;
+  text-align: center;
 }
