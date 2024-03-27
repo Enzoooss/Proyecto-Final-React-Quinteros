@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-pag {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #9755d8;
+}
+
+.container{
+    display: flex;
+    gap: 5rem;
+}
+
+.carrito {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lista {
+    font-size: 1.25rem;
+}
+
+span {
+    font-size: 1.25rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.gretting {
+    margin: 20px;
+}
