@@ -1,0 +1,26 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(89, 86, 90);
+    gap: 4rem;
+}
+.carta{
+    margin: 20px;
+    border: solid black 1.25px;
+}
+
+.carta img{
+    object-fit: cover;
+    height: 100%;
+    
+}
+
+.contenedor-compra{
+    border-top: solid black 2px;
+    overflow-anchor: 20px;
+}
+
+.carta Button {
+    height: 100%;
+    background-color: rgb(112, 15, 141);
+}

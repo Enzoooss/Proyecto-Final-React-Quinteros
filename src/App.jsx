@@ -1,15 +1,15 @@
-import Navbar from "./components/layout/navbar/Navbar"
-import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer"
+import { Layout } from "./components/layout/Layout"
+import Navbar from "./components/layout/navbar/Navbar";
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
 
 function App() {
-  
   return (
     <>
-      <Navbar/>
-      <ItemListContainer
-        gretting={"Bienvenidos a GameStore. Venta de Videojugos de Consola"}/>
+      <Layout>
+        <ItemListContainer/>
+      </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
