@@ -1,26 +1,116 @@
 main{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(89, 86, 90);
-    gap: 4rem;
+    background-color: rgba(99, 95, 95, 0.918);
 }
-.carta{
-    margin: 20px;
-    border: solid black 1.25px;
+.carta {
+    width: 22vw;
+    height: 25vw;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
-.carta img{
-    object-fit: cover;
+.img-container{
+    width: 100%;
+    height: 70%;
+}
+
+.img-container:hover {
+    background-color: rgb(142, 60, 218);
+}
+
+.img-container img{
+    width: 100%;
     height: 100%;
-    
+    cursor: pointer;
+}
+
+.container-text{
+    position: relative;
+    background-color: #765a85;
+    width: 100%;
+    height: 50%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* .container-text:hover{
+    cursor: pointer;
+    background-color: #765d838a;
+    transition: background-color 0.3s ease;
+} */
+
+.title{
+    padding-top: 3px;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.descripcion{
+    margin-left: 5%;
+    font-size: 1.1vw;
+}
+
+.price{
+    /* padding-top: 3%; */
+    margin-left: 5%;
+    font-size: 1.3vw;
+}
+
+.details{
+    background-color: rgb(131, 131, 131);
+    border-radius: 1rem;
+    width: 15rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 1.5px 0.5px 2px;
+}
+
+.details :hover{
+    background-color: rgb(238, 9, 9);
 }
 
 .contenedor-compra{
-    border-top: solid black 2px;
-    overflow-anchor: 20px;
+    border-top: solid black 1px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(137, 43, 226, 0.788);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
 }
 
-.carta Button {
-    height: 100%;
-    background-color: rgb(112, 15, 141);
+.contenedor-compra:hover{
+    background-color: rgba(142, 60, 218, 0.452);
+    transition: background-color 0.3s ease;
 }
+
+.comprar-boton{
+    font-size: 1.1vw;
+}
+
+/* .contenedor-compra{
+    border-top: solid black 1px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-carrito{
+    width: 100%;
+    background-color: rgb(131, 131, 131);
+    
+} */
+

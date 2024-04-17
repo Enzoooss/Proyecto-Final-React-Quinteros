@@ -15,9 +15,14 @@
 }
 
 .titulo{
-    background-color: rgb(131, 131, 131);
+    background-color: rgb(115, 113, 116);
     width: 10.5rem;
     border-radius: 1rem;
+}
+
+.titulo:hover{
+  background-color: rgba(131, 131, 131, 0.801);
+  transition: background-color 0.3s ease;
 }
 
 .carrito {
@@ -41,7 +46,13 @@ ul {
   gap: 30px;
 }
 
+li:hover {
+  background-color: rgba(131, 131, 131, 0.801);
+  transition: background-color 0.3s ease;
+}
+
 li{
+    /* background-color: rgb(131, 131, 131); */
     background-color: rgb(131, 131, 131);
     border-radius: 1rem;
     width: 7rem;
