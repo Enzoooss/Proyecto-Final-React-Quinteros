@@ -1,0 +1,13 @@
+
+
+.carta-detail {
+    width: 23vw;
+    height: 26vw;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.image-container-detail{
+        width: 100%;
+        height: 70%;
+}

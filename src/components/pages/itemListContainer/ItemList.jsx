@@ -3,8 +3,6 @@ import "./ItemListContainer.css"
 
 const ItemList = ({items}) => {
 
-    console.log(items)
-
   return (
     <div className="pagina">
         {items.map( (item, index)=>{
