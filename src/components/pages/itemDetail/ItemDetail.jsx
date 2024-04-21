@@ -24,7 +24,7 @@ const ItemDetail = ({item}) => {
           <h2> 
             <span>Stock: {item.stock}</span>
           </h2>
-          <CounterContainer stock={item.stock} />
+          {/* <CounterContainer stock={item.stock} /> */}
         </div>
       </div>
       

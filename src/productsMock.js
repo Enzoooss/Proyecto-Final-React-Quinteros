@@ -117,7 +117,7 @@ export const products = [
         description: "Únete a Samus en su última aventura para detener a los mortales Parásitos.",
         category: "Action/Adventure",
         plataforma: "Nintendo",
-        img: "https://res-console.cloudinary.com/dqsrohhpw/thumbnails/v1/image/upload/v1713238365/aHFkZWZhdWx0X2YwOG54eA==/template_primary/Y19jcm9wLGFyXzE2Ojk="
+        img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713662913/maxresdefault_z0ds4l.jpg"
     },{
         id: 13,
         title: "Ratchet & Clank: Rift Apart",
@@ -126,7 +126,7 @@ export const products = [
         description: "Embarcate en una aventura de saltos dimensionales con Ratchet y Clank.",
         category: "Action/Adventure",
         plataforma: "Playstation",
-        img: "https://res-console.cloudinary.com/dqsrohhpw/thumbnails/v1/image/upload/v1713417993/cmF0Y2hldC1hbmQtY2xhbmstcmlmdC1hcGFydC1rZXlhcnQtMDEtMjdqYW4yMV9lc191ZHlvb2M=/template_primary/Y19jcm9wLGFyXzE2Ojk="
+        img: "https://res.cloudinary.com/dqsrohhpw/image/upload/c_crop,ar_16:9/v1713417993/ratchet-and-clank-rift-apart-keyart-01-27jan21_es_udyooc.png"
     },
     {
         id: 14,
@@ -146,7 +146,7 @@ export const products = [
         description: "Enfrenta los desafíos de Boletaria en esta oscura aventura de fantasía.",
         category: "Action/RPG",
         plataforma: "Playstation",
-        img: "https://res-console.cloudinary.com/dqsrohhpw/thumbnails/v1/image/upload/v1713417894/ZGVtb25zLXNvdWxzLWxpc3RpbmctdGh1bWItMDEtZW4tMDJvY3QyMF9vNjN1ZWw=/template_primary/Y19jcm9wLGFyXzE2Ojk="
+        img: "https://res.cloudinary.com/dqsrohhpw/image/upload/c_crop,ar_16:9/v1713417894/demons-souls-listing-thumb-01-en-02oct20_o63uel.png"
     },
     {
         id: 16,
