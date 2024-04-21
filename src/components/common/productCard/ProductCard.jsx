@@ -21,9 +21,9 @@ const ProductCard = ({ title, description, price, img, id }) => {
         <h2 className="title">{title}</h2>
         <p className="descripcion">{description}</p>
         <p className="price">$ {price} -</p>
-        <Link to={`/itemDetail/${id}`}>
+          <Link to={`/itemDetail/${id}`}>
           <p className="details">Detalles</p>
-        </Link>
+        </Link> 
       </div>
       <div className="contenedor-compra">
         <p className="comprar-boton">Buy Now</p>

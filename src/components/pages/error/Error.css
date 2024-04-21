@@ -1,0 +1,38 @@
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70dvh;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.carta-error{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.error-404{
+    padding-bottom: 1rem;
+}
+
+.comentario-error{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.container-titulo-error{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-error{
+    margin-top: 10px;
+    background-color: rgb(115, 113, 116);
+    width: 26dvh;
+    border-radius: 1rem;
+    
+}

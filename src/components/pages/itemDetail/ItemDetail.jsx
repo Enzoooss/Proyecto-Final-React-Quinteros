@@ -1,17 +1,33 @@
+import CounterContainer from "../../common/counter/CounterContainer"
 import "./ItemDetail.css"
 
 const ItemDetail = ({item}) => {
   return (
     <div>
-      <section className="carta-detail">
+      <div className="carta-Detail">
         <div className="image-container-detail">
-        
+          <img src={item.img} alt="" />
         </div>
-        <h2>{item.title}</h2>
-        <p>{item.description}</p>
-        <p>{item.price}</p>
-      </section>
-        
+        <div className="container-detail">
+          <h2> 
+            <span>Nombre: {item.title}</span>
+          </h2>
+          <h2> 
+            <span>Descripcion: {item.description}</span>
+          </h2>
+          <h2> 
+            <span>Genero: {item.category}</span>
+          </h2>
+          <h2> 
+            <span>Precio: $ {item.price}  -.</span>
+          </h2>
+          <h2> 
+            <span>Stock: {item.stock}</span>
+          </h2>
+          <CounterContainer stock={item.stock} />
+        </div>
+      </div>
+      
     </div>
   )
 }

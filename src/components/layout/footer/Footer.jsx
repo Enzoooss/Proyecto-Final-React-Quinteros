@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import "../footer/Footer.css"
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -16,10 +15,10 @@ export const Footer = () => {
         <article>
               <h3 className="text-lg">Seguinos en </h3>  
             <div className="redes">
-              <Link href="https://github.com/Enzoooss?tab=overview&from=2024-04-01&to=2024-04-19" target="_blank" className="social-icon"><FaGithub /></Link>
-              <Link href="https://github.com/Enzoooss?tab=overview&from=2024-04-01&to=2024-04-19" target="_blank" className="social-icon"><CiLinkedin /></Link>
-              <Link href="https://github.com/Enzoooss?tab=overview&from=2024-04-01&to=2024-04-19" target="_blank" className="social-icon"><FaInstagram /></Link>
-              <Link href="https://github.com/Enzoooss?tab=overview&from=2024-04-01&to=2024-04-19" target="_blank" className="social-icon"><BsTwitterX /></Link>
+              <a href="https://github.com/Enzoooss?tab=overview&from=2024-04-01&to=2024-04-19" target="_blank" className="social-icon"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/enzo-quinteros-30926a21a/" target="_blank" className="social-icon"><CiLinkedin /></a>
+              <a href="https://www.instagram.com" target="_blank" className="social-icon"><FaInstagram /></a>
+              <a href="https://twitter.com/home" target="_blank" className="social-icon"><BsTwitterX /></a>
             </div>
         </article>
       </section>

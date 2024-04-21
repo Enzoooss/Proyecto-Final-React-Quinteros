@@ -1,19 +1,19 @@
 
 .carta {
-    width: 23vw;
-    height: 26vw;
+    /* width: 24vw; */
+    height: 30vw;
     border: 1px solid black;
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    /* position: relative; */
+    margin: 2vw 0;
 }
 
 .img-container{
     width: 100%;
-    height: 70%;
+    height: 50%;
+    object-fit: cover;
 }
 
 .img-container:hover {
@@ -26,18 +26,16 @@
 }
 
 .container-text{
-    position: relative;
+    /* position: relative; */
     background-color: #765a85;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
-    height: 50%;
+    height: 40%;
+    padding: 0 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
-/* .container-text:hover{
-    cursor: pointer;
-    background-color: #765d838a;
-    transition: background-color 0.3s ease;
-} */
 
 .title{
     padding-top: 3px;
@@ -46,33 +44,29 @@
 }
 
 .descripcion{
-    margin-left: 5%;
     font-size: 1.1vw;
 }
 
 .price{
-    /* padding-top: 3%; */
-    margin-left: 5%;
     font-size: 1.3vw;
 }
 
 .details{
     background-color: rgb(131, 131, 131);
     border-radius: 1rem;
-    width: 15rem;
-    height: 2rem;
-    position: absolute;
-    bottom: 10px;
-    left: 20%;
-    text-align: center;
+    padding: 4px 0;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     border: 1px solid black;
     box-shadow: 1.5px 1.8px 3px;
 }
 
-.details :hover{
-    background-color: rgb(238, 9, 9);
+.details:hover{
+    background-color: rgba(131, 131, 131, 0.76);
+    transition: background-color 0.3s ease;
 }
 
 .contenedor-compra{

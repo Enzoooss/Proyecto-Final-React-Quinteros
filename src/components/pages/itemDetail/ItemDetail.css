@@ -1,13 +1,38 @@
 
 
-.carta-detail {
-    width: 23vw;
-    height: 26vw;
-    border: 1px solid black;
-    border-radius: 3px;
+.carta-Detail {
+    width: 100%;
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .image-container-detail{
-        width: 100%;
-        height: 70%;
+    height: 450px;
+    object-fit: contain;
+    box-shadow: 3px 1.75px 3px black;
 }
+
+.image-container-detail img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.container-detail{
+    padding-top: 1.5rem;
+    width: 50%;
+    height: 450px;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: antiquewhite;
+    background-color: #4a3655;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 3px 1.75px 3px black;
+}
+
