@@ -8,7 +8,6 @@ import { useParams } from "react-router-dom";
 const ItemListContainer = () => {
 
   const {name} = useParams()
-  console.log(name)
  
   const [items, setItems] = useState([]);
     const [error, setError] = useState( null );
