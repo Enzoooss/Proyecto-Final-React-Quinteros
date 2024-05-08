@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { products } from "../../../productsMock"
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { db } from "../../../firebaseConfig";
+import {addDoc, collection, getDoc, getDocs, query, where} from "firebase/firestore"
+
 
 
 
@@ -14,27 +17,46 @@ const ItemListContainer = () => {
 
     useEffect( ()=>{
 
-        let productFiltered = products.filter( product => product.plataforma === name)
+        // const productsCollection = collection( db , "products")]-[]
+        // getDocs(productsCollection).then((res) => {let newArray = res.docs.map( (doc)=>{
+        //   return {id: doc.id, ...doc.data()};
+        // })
+        //   setItems(newArray)});
 
-        const getProducts = new Promise( (resolve, reject) => {
-            let x = true
-            if(x){
-                setTimeout(() => {
-                    resolve(name ? productFiltered : products);
-                    
-                }, 10);
-            }else {
-                reject({status: 400, message: "No puedes Ingresar"})
-            } 
-         });
-        
-         getProducts.then( (res)=>setItems( res ) ).catch( (error)=>{setError(error)} )
-        
-    }, [name]);
+        // const productsCollection = collection( db , "products")
+        // let consulta = query( productsCollection, where( "plataforma", "==", name) )
+        // getDocs(consulta).then((res)=>{ let newArray = res.docs.map( (doc)=>{
+        //     return {id: doc.id, ...doc.data()};
+        //   })
+        //     setItems(newArray)});
+
+        const productsCollection = collection(db, "products")
+        let consulta = productsCollection;
+        if(name) {
+          consulta = query(productsCollection, where("plataforma", "==", name));
+        }
+        getDocs(consulta).then((res)=>{
+          let newArray = res.docs.map((doc) => {
+            return {id: doc.id, ...doc.data() };
+          });
+          setItems(newArray);
+        });
+        }, [name]);
+
+        // const addDocsProducts = () =>{
+
+        //   let productsCollection = collection(db, "alguna")
+        //   products.forEach( (product)=> addDoc(productsCollection , product))
+        // }
 
   return (
     <main>
-      <ItemList items={items}/>
+      {
+        items.length > 0 ? ( <ItemList items={items} error={error}/>) : ( <h1>Cargando.... ANASHEEE </h1>) 
+      }
+      {/* <button onClick={addDocsProducts}>Agregar Documentos</button> */}
+      {/* <h1> Cargando....</h1> */}
+      {/* <ItemList items={items}/> */}
     </main>
   )
 }

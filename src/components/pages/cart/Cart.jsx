@@ -3,7 +3,7 @@ import "../cart/Cart.css";
 import { Button } from "@mui/material";
 
 
-const Cart = ({cart, clearCart, deleteById}) => {
+const Cart = ({cart, clearCart, deleteById, total}) => {
   return (
     <main>
       <div>
@@ -16,12 +16,15 @@ const Cart = ({cart, clearCart, deleteById}) => {
             <button onClick={()=>deleteById(product.id)}>Eliminar</button>
           </div>
         ))}
-
+          <h2>El total a pagar es {total}</h2>
         <Button onClick={clearCart} variant="outlined" >Eliminar carrito</Button>
 
-        <Link to="/checkout">
+        {
+          cart.length > 0 && (<Link to="/checkout">
           <Button variant="contained">Finalizar compra</Button>
-        </Link>
+        </Link>)
+        }
+        
       </div>
     </main>
   );

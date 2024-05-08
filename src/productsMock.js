@@ -1,16 +1,5 @@
 export const products = [
     {
-        id: 1,
-        title: "God of War",
-        price: 59.99,
-        stock: 100,
-        description: "Únete a Kratos en una épica aventura mitológica.",
-        category: "Acción/Aventura",
-        plataforma: "Playstation",
-        img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713237789/god-war-ragnarok-2466115_p8lc0p.jpg"
-    },
-    {
-        id: 2,
         title: "The Last of Us Part II",
         price: 49.99,
         stock: 75,
@@ -20,7 +9,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713238481/0b68ebf352db559cb45a75bd32fed3381f34dc52c5480192_zqauuh.jpg"
     },
     {
-        id: 3,
         title: "Horizon Zero Dawn",
         price: 39.99,
         stock: 50,
@@ -30,7 +18,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713237952/marvels-spider-man-2-2.1686124547.98_zwgxjj.jpg"
     },
     {
-        id: 4,
         title: "Spider-Man: Miles Morales",
         price: 49.99,
         stock: 80,
@@ -40,7 +27,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/c_crop,ar_16:9/v1713237991/marvels-spider-man-miles-morales-listing-thumb-01-ps4-ps5-en-02oct20_aiq5nb.png"
     },
     {
-        id: 5,
         title: "Halo Infinite",
         price: 59.99,
         stock: 100,
@@ -50,17 +36,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713238026/apps.50670.13727851868390641.c9cc5f66-aff8-406c-af6b-440838730be0_rjncje.jpg"
     },
     {
-        id: 6,
-        title: "Forza Horizon 5",
-        price: 49.99,
-        stock: 75,
-        description: "Experimenta la emoción de las carreras de mundo abierto en México.",
-        category: "Racing",
-        plataforma: "Xbox",
-        img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713238060/capsule_616x353_j3d5gn.jpg"
-    },
-    {
-        id: 7,
         title: "Gears 5",
         price: 39.99,
         stock: 50,
@@ -70,7 +45,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713238075/header_jy1xd2.jpg"
     },
     {
-        id: 8,
         title: "Sea of Thieves",
         price: 59.99,
         stock: 100,
@@ -80,7 +54,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713238280/Wire_SoT_SeasonNine_KeyArt_1920-a93a7713dea1355f9268_meilvl.jpg"
     },
     {
-        id: 9,
         title: "The Legend of Zelda: Breath of the Wild",
         price: 59.99,
         stock: 100,
@@ -90,7 +63,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1712779703/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58_qxno6w.jpg"
     },
     {
-        id: 10,
         title: "Super Mario Odyssey",
         price: 49.99,
         stock: 75,
@@ -100,7 +72,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713238316/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5_ju2s4s.jpg"
     },
     {
-        id: 11,
         title: "Animal Crossing: New Horizons",
         price: 39.99,
         stock: 50,
@@ -110,7 +81,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713238359/9989957eae3a6b545194c42fec2071675c34aadacd65e6b33fdfe7b3b6a86c3a_rrbhbk.jpg"
     },
     {
-        id: 12,
         title: "Metroid Dread",
         price: 49.99,
         stock: 80,
@@ -119,7 +89,6 @@ export const products = [
         plataforma: "Nintendo",
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713662913/maxresdefault_z0ds4l.jpg"
     },{
-        id: 13,
         title: "Ratchet & Clank: Rift Apart",
         price: 69.99,
         stock: 40,
@@ -129,7 +98,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/c_crop,ar_16:9/v1713417993/ratchet-and-clank-rift-apart-keyart-01-27jan21_es_udyooc.png"
     },
     {
-        id: 14,
         title: "Ghost of Tsushima",
         price: 59.99,
         stock: 25,
@@ -139,7 +107,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713418234/got-keyart-80677_3tev.1280_gixg0b.jpg"
     },
     {
-        id: 15,
         title: "Demon's Souls",
         price: 69.99,
         stock: 30,
@@ -149,7 +116,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/c_crop,ar_16:9/v1713417894/demons-souls-listing-thumb-01-en-02oct20_o63uel.png"
     },
     {
-        id: 16,
         title: "Detroit: Become Human",
         price: 49.99,
         stock: 60,
@@ -159,7 +125,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713418319/Diesel_2Fproductv2_2Fdetroit-become-human_2Fhome_2FDetroit_PC_Carousel-1920x1080-6e90610a5d314ce0c12860770cc38c1b23213000_nojgpj.jpg"
     },
     {
-        id: 17,
         title: "Titanfall 2",
         price: 39.99,
         stock: 50,
@@ -169,7 +134,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713418860/Warriors_Titanfall_2_Robot_525245_1920x1080_hoaubx.jpg",
     },
     {
-        id: 18,
         title: "Hellblade II: Senua's Saga",
         price: 49.99,
         stock: 50,
@@ -179,7 +143,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713419087/1366_2000_guitaf.jpg"
     },
     {
-        id: 19,
         title: "Starfield",
         price: 59.99,
         stock: 80,
@@ -189,7 +152,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713418851/starfield_mvqaam.jpg"
     },
     {
-        id: 20,
         title: "Ori and the Blind Forest",
         price: 29.99,
         stock: 40,
@@ -199,7 +161,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713419216/wallhaven-zxz3dv_gtfhus.png"
     },
     {
-        id: 21,
         title: "Splatoon 3",
         price: 59.99,
         stock: 90,
@@ -209,7 +170,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713419806/20229617462452_1_mepgyj.jpg"
     },
     {
-        id: 22,
         title: "Bayonetta 3",
         price: 49.99,
         stock: 75,
@@ -219,7 +179,6 @@ export const products = [
         img: "https://res.cloudinary.com/dqsrohhpw/image/upload/v1713419832/20221013848123_1_cm60o6.jpg"
     },
     {
-        id: 23,
         title: "Kirby: La Tierra Olvidada",
         price: 39.99,
         stock: 60,
@@ -229,7 +188,6 @@ export const products = [
         img:"https://res.cloudinary.com/dqsrohhpw/image/upload/v1713420269/20223217145276_1_onq6ze.jpg"
     },
     {
-        id: 24,
         title: "Super Smash Bros. Ultimate",
         price: 49.99,
         stock: 70,
