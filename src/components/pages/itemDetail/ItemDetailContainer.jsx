@@ -33,7 +33,6 @@ const ItemDetailContainer = () => {
   //   getProduct.then((res) => setItem(res));
   // }, [id]);
 
-  // console.log(item)
 
   const onAdd = (cantidad) => {
     let product = { ...item, quantity: cantidad};

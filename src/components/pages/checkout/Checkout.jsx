@@ -30,7 +30,7 @@ export const Checkout = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // console.log(event) lo que yo quiera hacer con el formulario
-    console.log(info);
+    // console.log(info);
     let obj = {
       buyer: info,
       items: cart,
