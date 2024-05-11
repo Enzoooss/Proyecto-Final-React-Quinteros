@@ -28,11 +28,10 @@
     padding-left: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
     color: antiquewhite;
     background-color: #4a3655;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     box-shadow: 3px 1.75px 3px black;
 }
-

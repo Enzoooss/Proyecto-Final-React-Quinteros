@@ -1,0 +1,10 @@
+.contador-carro{
+    display: flex;
+    gap: 1.25rem;
+}
+
+.contador-carro button {
+    border-radius: 10px;
+    border: 1px solid steelblue;
+    
+}

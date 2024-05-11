@@ -24,15 +24,6 @@ const ItemDetailContainer = () => {
       setItem({id: res.id, ...res.data()});
     });
   }, [id]);
-  // useEffect(() => {
-  //   let itemEncontrado = products.find((product) => product.id === +id);
-  //   const getProduct = new Promise((resolve, reject) => {
-  //     resolve(itemEncontrado);
-  //   });
-
-  //   getProduct.then((res) => setItem(res));
-  // }, [id]);
-
 
   const onAdd = (cantidad) => {
     let product = { ...item, quantity: cantidad};

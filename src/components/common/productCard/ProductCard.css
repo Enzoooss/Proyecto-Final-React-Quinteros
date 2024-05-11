@@ -88,6 +88,10 @@
 
 .comprar-boton{
     font-size: 1.1vw;
+    background: none;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* .contenedor-compra{

@@ -24,7 +24,9 @@ const ItemDetail = ({item, onAdd, initial}) => {
           <h2> 
             <span>Stock: {item.stock}</span>
           </h2>
-          <CounterContainer stock={item.stock} onAdd={onAdd} initial={initial}/>
+          <div className="contador">
+            <span><CounterContainer stock={item.stock} onAdd={onAdd} initial={initial}/></span>
+          </div>
         </div>
       </div>
       

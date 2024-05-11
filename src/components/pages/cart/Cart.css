@@ -1,0 +1,16 @@
+.products-comprados{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin: 8px 0;
+    border: 2px solid black;
+    box-shadow: 1.5px 1.5px 1px 1px;
+}
+.products-comprados img{
+    width: 15%;
+}
+
+.products-comprados h3{
+    font-size: 22px;
+}

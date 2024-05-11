@@ -7,9 +7,10 @@ const Cart = ({cart, clearCart, deleteById, total}) => {
   return (
     <main>
       <div>
-        <h1>Aca van los Productos</h1>
+        <h1>Videojuegos agregados a tu carrito</h1>
         {cart.map((product) => (
-          <div key={product.id} style={{border: "2px solid black"}}>
+          <div key={product.id} className="products-comprados">
+            <img src={product.img} alt="" />
             <h3>{product.title}</h3>
             <h3>{product.price}</h3>
             <h3>{product.quantity}</h3>
