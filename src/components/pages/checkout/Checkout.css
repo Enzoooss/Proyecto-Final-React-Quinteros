@@ -1,0 +1,17 @@
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: rgb(115, 106, 116);
+    width: 60%;
+    height: 175px;
+}
+
+.pedido-finalizado h1{
+    padding-bottom: 2rem;
+}
+
+.pedido-finalizado h2{
+    padding-bottom: 3rem;
+}

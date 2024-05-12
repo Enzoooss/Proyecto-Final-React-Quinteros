@@ -1,3 +1,6 @@
+.title-cart{
+    padding: 1rem 4rem;
+}
 .products-comprados{
     display: flex;
     align-items: center;
@@ -5,7 +8,8 @@
     padding: 0 100px;
     margin: 8px 0;
     border: 2px solid black;
-    box-shadow: 1.5px 1.5px 1px 1px;
+    box-shadow: 1.5px 1.5px 1px 1px ;
+    background-color: rgb(115, 106, 116);
 }
 .products-comprados img{
     width: 15%;
@@ -13,4 +17,24 @@
 
 .products-comprados h3{
     font-size: 22px;
+}
+
+.products-comprados .delete{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: red;
+}
+
+.finalizado-compra{
+    padding: 2rem 4rem;
+}
+
+.finalizado-compra h2{
+    font-size: 2rem;
+}
+
+.botones-cart{
+    margin-top: 20px;
+    display: flex;
+    gap: 5rem;
 }

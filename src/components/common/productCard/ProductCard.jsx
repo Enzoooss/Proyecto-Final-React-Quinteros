@@ -15,6 +15,8 @@ import { CartContext } from "../../../context/CartContext";
 import { useContext, useEffect, useState } from "react";
 import { db } from "../../../firebaseConfig";
 import { doc, collection, getDoc } from "firebase/firestore";
+import Swal from "sweetalert2";
+
 
 
 
@@ -36,6 +38,14 @@ const ProductCard = ({ title, description, price, img, id }) => {
   const onAdd = (cantidad) => {
     let product = { ...item, quantity: cantidad};
     addToCart(product);
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Se agrego al Carrito",
+      showConfirmButton: false,
+      timer: 1500
+    });
   };
   
   return (
@@ -52,7 +62,7 @@ const ProductCard = ({ title, description, price, img, id }) => {
         </Link> 
       </div>
       <div className="contenedor-compra">
-        <button onClick={() => onAdd(contador)} className="comprar-boton">Comprar Ahora!</button>
+        <button onClick={() => onAdd(contador)} className="comprar-boton" >Agregar al Carrito</button>
         
       </div>
     </div>

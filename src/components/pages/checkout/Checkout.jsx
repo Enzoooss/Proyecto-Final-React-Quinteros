@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
 import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
+import "../checkout/Checkout.css"
 
 export const Checkout = () => {
   const { cart, getPrecioTotal, clearCart } = useContext(CartContext);
@@ -42,47 +43,52 @@ export const Checkout = () => {
     // let productsCollection = collection(db, "products")
     // let refDoc = doc(db, "products", "asdasd")
     // updateDoc(doc(db, "products", "asdasd") )
-    
-    cart.forEach( (product => {
-        let refDoc = doc(db, "products", product.id)
-        updateDoc(refDoc, {stock: product.stock - product.quantity})
-    }))
 
-    clearCart()
+    cart.forEach((product) => {
+      let refDoc = doc(db, "products", product.id);
+      updateDoc(refDoc, { stock: product.stock - product.quantity });
+    });
 
+    clearCart();
   };
 
   return (
     <div style={{ padding: "100px" }}>
       {orderId ? (
-        <h1>Su id es: {orderId}</h1>
+        <div className="pedido-finalizado">
+          <h1 className="title-finalizado">El numero de tu pedido es: {orderId}</h1>
+          <h2 className="subtitle-finalizado">Muchas gracias por tu compra!!</h2>
+          <img src="https://i.pinimg.com/236x/31/de/ed/31deede4f9648e9f6f3982a2b22cf554.jpg" alt="" />
+        </div>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <TextField
-            variant="outlined"
-            type="text"
-            label="nombre"
-            onChange={handleChange}
-            name="name"
-          />
-          <TextField
-            variant="outlined"
-            type="text"
-            label="telefono"
-            onChange={handleChange}
-            name="phone"
-          />
-          <TextField
-            variant="outlined"
-            type="text"
-            label="email"
-            onChange={handleChange}
-            name="email"
-          />
-          <Button variant="contained" type="submit">
-            Enviar
-          </Button>
-        </form>
+        <div className="formulario">
+          <form onSubmit={handleSubmit}>
+            <TextField
+              variant="outlined"
+              type="text"
+              label="nombre"
+              onChange={handleChange}
+              name="name"
+            />
+            <TextField
+              variant="outlined"
+              type="text"
+              label="telefono"
+              onChange={handleChange}
+              name="phone"
+            />
+            <TextField
+              variant="outlined"
+              type="text"
+              label="email"
+              onChange={handleChange}
+              name="email"
+            />
+            <Button variant="contained" type="submit">
+              Enviar
+            </Button>
+          </form>
+        </div>
       )}
     </div>
   );

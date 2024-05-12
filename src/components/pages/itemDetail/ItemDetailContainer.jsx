@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
 import { doc, collection, getDoc } from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
+import Swal from "sweetalert2";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -29,7 +30,17 @@ const ItemDetailContainer = () => {
     let product = { ...item, quantity: cantidad};
     //Agregamos
     addToCart(product);
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Se agrego al Carrito",
+      showConfirmButton: false,
+      timer: 1500
+    });
   };
+
+  
 
   return <ItemDetail item={item} onAdd={onAdd} initial={initial} />;
 };
