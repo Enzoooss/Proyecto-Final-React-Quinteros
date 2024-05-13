@@ -9,7 +9,7 @@ const Counter = ({ restar, sumar, contador, onAdd }) => {
       <Button onClick={restar} variant="outlined" >Restar</Button>
       <h2>{contador}</h2>
       <Button onClick={sumar} variant="outlined">Sumar</Button>
-      <Button onClick={() => onAdd(contador)}>Agregar al carrito</Button>
+      <Button onClick={() => onAdd(contador)} className="button-agregar">Agregar al carrito</Button>
     </div>
   );
 };

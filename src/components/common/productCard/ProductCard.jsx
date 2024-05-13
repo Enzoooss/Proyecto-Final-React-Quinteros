@@ -23,9 +23,20 @@ import Swal from "sweetalert2";
 
 const ProductCard = ({ title, description, price, img, id }) => {
   
-  const { addToCart, getQuantityById } = useContext(CartContext);
+  const { addToCart, getQuantityById, cart, isInCart } = useContext(CartContext);
   const [contador,setContador] = useState(1)
   const [item, setItem] = useState({});
+
+  
+  
+
+  const sumar = () => {
+    if (contador < item.stock){
+      setContador(contador + 1);
+    }else {
+      alert("Maximo en stock")
+    }
+  };
 
   useEffect(() => {
     let productsCollection = collection(db, "products");
@@ -36,16 +47,29 @@ const ProductCard = ({ title, description, price, img, id }) => {
   }, [id]);
   
   const onAdd = (cantidad) => {
-    let product = { ...item, quantity: cantidad};
-    addToCart(product);
+    const isProductInCart = getQuantityById(+id);
+    const newQuantity = isProductInCart !== undefined ? isProductInCart + cantidad : cantidad;
+    let product = { ...item, quantity: newQuantity };
 
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      title: "Se agrego al Carrito",
-      showConfirmButton: false,
-      timer: 1500
-    });
+    if (item.stock > 0) {
+      addToCart(product);
+      setContador(newQuantity);
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Se agregó al Carrito",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    } else {
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "No hay Stock",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
   };
   
   return (

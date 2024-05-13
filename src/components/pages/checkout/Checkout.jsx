@@ -58,7 +58,7 @@ export const Checkout = () => {
         <div className="pedido-finalizado">
           <h1 className="title-finalizado">El numero de tu pedido es: {orderId}</h1>
           <h2 className="subtitle-finalizado">Muchas gracias por tu compra!!</h2>
-          <img src="https://i.pinimg.com/236x/31/de/ed/31deede4f9648e9f6f3982a2b22cf554.jpg" alt="" />
+          <img src="\src\assets\checkout-ok.png" alt="" />
         </div>
       ) : (
         <div className="formulario">
